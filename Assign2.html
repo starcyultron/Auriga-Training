@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2</title>
+	<style type="text/css">
+		body{
+			border: 1px;
+			padding: 0px 100px;
+		}
+		.sec{
+			border: 1px black solid;
+			border-top: 3px black solid;	 
+		}
+		.lg{
+			font-weight: bold;
+			font-size: 34px;
+			text-align: center;
+		}
+		.frm{
+			background-color: #e9e9e9;
+			display: block;
+			margin: 0px 100px;
+			float: center;
+			/*text-align: center;*/
+		}
+		.lo{
+			display: inline-block;
+			float: right;
+			padding: 10px;
+		}
+		.head{
+			font-size: 24px;
+			display: inline-block;
+			margin: 10px 10px;
+		}
+		.f16{
+			font-size: 16px;
+			color: black;
+		}
+		.sb{
+			padding: 10px;
+			background-color: #e9e9e9;
+			margin-top: 0px;
+		}
+		.wid{
+			width: 85%;
+			padding: 10px;
+		}
+		a{
+			color: black;
+		}
+		.not{
+			margin: 10px 10px;
+			text-align: center;
+			background-color: gray;
+			padding: 10px;
+		}
+		.day{
+			color: gray;
+		}
+		.msg1{
+			width: 500px;
+	height: 40px;
+	margin-top: 3px;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #9E9E9E;
+	padding: 5px 10px 2px;
+		}
+		.msg2{
+			width: 500px;
+	height: 40px;
+	margin-top: 3px;
+	float: right;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #9E9E9E;
+	padding: 5px 10px 2px;
+}
+		}
+		.sender{
+			float: right;
+		}
+		.pass{
+			display: inline-block;
+			margin: 0px;
+			float: right;
+		}
+		.unread{
+			margin: 40px auto;
+			text-align: center;
+			padding: 20px;
+			background-color: gray;
+			width: 40%;
+		}
+	</style>
+</head>
+<body>
+	<section class="sec">
+		<div class="head"><b>Textify</b> Because Text Messaging Rocks</div>
+		<span><a href="#" class="lo">logout</a></span>
+		<div class="lg">(212) 555-1234</div>
+		<div class="lg "><a href="#" class="f16" >What is this number?</a></div>
+		<div class="frm">
+			<div>
+			<form action="" method="get" class="">
+				<table>
+				<tr><td><label for="reciepent" class="head lo">To:</label></td>
+				<td><input type="text" name="reciepent"></td>
+					<td><< Phone number or name</td></tr>
+				<tr><td><label for="msg" class="head">Message:</label></td>
+				<td colspan="2"><textarea name="msg" rows="10" cols="80"></textarea></td></tr>
+				<tr><td></td><td><a href="" >Attach a photo to this text</a></td></tr>
+				<tr><td></td><td><input type="submit" class="head" style="background-color: gray;" name="" value="Send Text Message"></td>
+					<td>Or, <a href="" >schedule it for later delivery</a></td></tr>
+				</table>
+			</form></div>
+		</div>
+		<br><br><br>
+			<input type="button" name="recent" value="Recent Conversation">
+			<input type="button" name="recent" value="All Conversation">
+			<input type="button" name="recent" value="Photos">
+
+			<p class="pass"><u>Change Password</u></p>
+		<div class="sb">
+			<div class="head">(508) 555-1234</div>
+			<span><a href="" class="f16">set a name for this number</a></span>
+			<a href="" class="lo head"> View all conversation</a>
+
+			<form>
+
+				<label for="newmsg"><b>New Text Message:</b></label><br>
+				<input type="text" name="nmsg" class="wid">
+				<input type="submit" name="" value="Send Message" class="not"><br>
+				<span><a href="">Attach a photo</a> or, <a href="">schedule for delivery</a></span>
+			</form>
+
+
+			<div class="not">You have 1 new message scheduled for later delivery.<a href="">click here to login</a></div>
+
+			<div><b>(508) 555-1234</b> <span class="day">Today</span> </div>
+			<div class="msg1">OMG! I can't wait to see that movie! what theater do you want to go?Anything down near united sq</div>
+			<div style="float: right;"><b>You -(212) 555-1234</b> <p style="color: gray; display: inline;">Today</p></div>
+				<br>
+			<div class="msg2">OMG! I can't wait to see that movie! what theater do you want to go?Anything down near united sq</div>
+			<br><br><br>
+			<div><b>(508) 555-1234</b> <span class="day">Yesterday</span> </div>
+			<div class="msg1">OMG! I can't wait to see that movie! what theater do you want to go?Anything down near united sq</div>
+			<div style="float: right;"><b>You -(212) 555-1234</b> <p style="color: gray; display: inline;">Yesterday</p></div>
+				<br>
+			<div class="msg2">OMG! I can't wait to see that movie! what theater do you want to go?Anything down near united sq</div>
+			<br><br><br>
+			<div><b>(508) 555-1234</b> <span class="day">About 3 Weeks ago</span> </div>
+			<div class="msg1">OMG! I can't wait to see that movie! what theater do you want to go?Anything down near united sq</div>
+			<div style="float: right;"><b>You -(212) 555-1234</b> <p style="color: gray; display: inline;">About 3 Weeks ago</p></div>
+				<br>
+			<div class="msg2">OMG! I can't wait to see that movie! what theater do you want to go?Anything down near united sq</div>
+			<br><br>
+			<div class="unread"><a href="">Load More Message</a><br>
+				<p>There are 217 more messages in conversation</p></div>
+		</div>
+	</section>
+	<div>
+		<div style="display: inline-block;">Textify &copy; 2011</div>
+		<p style="display: inline-block; float: right; margin: 0px;">All text messaging data on this site is kept 100% secure- <a href="">read our security policy</a></p>
+	</div>
+</body>
+</html>
