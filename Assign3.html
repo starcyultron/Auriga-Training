@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2</title>
+	<style type="text/css">
+		body{
+			border: 1px;
+			padding: 0px 100px;
+		}
+		.sec{
+			border: 1px black solid;
+			border-top: 3px black solid;	 
+		}
+		.lg{
+			font-weight: bold;
+			font-size: 34px;
+			text-align: center;
+		}
+		.frm{
+			background-color: #e9e9e9;
+			display: block;
+			margin: 0px 100px;
+			float: center;
+			/*text-align: center;*/
+		}
+		.lo{
+			display: inline-block;
+			float: right;
+			padding: 10px;
+		}
+		.head{
+			font-size: 24px;
+			display: inline-block;
+			margin: 10px 10px;
+		}
+		.f16{
+			font-size: 16px;
+			color: black;
+		}
+		.sb{
+			padding: 10px;
+			background-color: #e9e9e9;
+			margin-top: 0px;
+		}
+		.wid{
+			width: 85%;
+			padding: 10px;
+		}
+		a{
+			color: black;
+		}
+		.not{
+			margin: 10px 10px;
+			text-align: center;
+			background-color: gray;
+			padding: 10px;
+		}
+		.day{
+			color: gray;
+		}
+		.msg1{
+			width: 500px;
+	height: 40px;
+	margin-top: 3px;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #9E9E9E;
+	padding: 5px 10px 2px;
+		}
+		.msg2{
+			width: 500px;
+	height: 40px;
+	margin-top: 3px;
+	float: right;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #9E9E9E;
+	padding: 5px 10px 2px;
+}
+		}
+		.sender{
+			float: right;
+		}
+		.pass{
+			display: inline-block;
+			margin: 0px;
+			float: right;
+		}
+		.unread{
+			margin: 40px auto;
+			text-align: center;
+			padding: 20px;
+			background-color: gray;
+			width: 40%;
+		}
+		.chat{
+			margin-top: 20px;
+			display: inline-block;
+			font-size: 20px;
+		}
+		.contact{
+			width: 200px;
+			margin-left: 20px;
+			display: inline-block;
+			text-align: right;
+		}
+		.Msg{
+			width: 900px;
+			display: inline-block;
+			float: right;
+			margin-left: 30px;
+		}
+	</style>
+</head>
+<body>
+	<section class="sec">
+		<div class="head"><b>Textify</b> Because Text Messaging Rocks</div>
+		<span><a href="#" class="lo">logout</a></span>
+		<div class="lg">(212) 555-1234</div>
+		<div class="lg "><a href="#" class="f16" >What is this number?</a></div>
+		<div class="frm">
+			<div>
+			<form action="" method="get" class="">
+				<table>
+				<tr><td><label for="reciepent" class="head lo">To:</label></td>
+				<td><input type="text" name="reciepent"></td>
+					<td><< Phone number or name</td></tr>
+				<tr><td><label for="msg" class="head">Message:</label></td>
+				<td colspan="2"><textarea name="msg" rows="10" cols="80"></textarea></td></tr>
+				<tr><td></td><td><a href="" >Attach a photo to this text</a></td></tr>
+				<tr><td></td><td><input type="submit" class="head" style="background-color: gray;" name="" value="Send Text Message"></td>
+					<td>Or, <a href="" >schedule it for later delivery</a></td></tr>
+				</table>
+			</form></div>
+		</div>
+		<br><br><br>
+		<!--<div class="tab">
+				<input type="radio" id="tab1" name="tab1">
+				<input type="radio" id="tab2" name="tab2" checked="checked">
+				<input type="radio" id="tab3" name="tab3">
+				
+			<span>
+				<ul>
+					<li><label for="tab1">Recent Conversation</label></li>
+					<li><label for="tab2">All Conversation</label></li>
+					<li><label for="tab3">Photos</label></li>
+				</ul>
+			</span>
+			</div>
+		-->
+		<input type="button" name="recent" value="Recent Conversation">
+			<input type="button" name="recent" value="All Conversation">
+			<input type="button" name="recent" value="Photos">
+			<p class="pass"><u>Change Password</u></p>
+		<div class="sb">
+			<h2>Top Conversation</h2>
+			<hr>
+			<div class="chat">
+				<div class="contact">
+					<u>(508)555-1234</u>
+					<p style="color: gray; margin-top: 0px;">233 Messages</p>
+				</div>
+				<div class="Msg">
+					<mark style="background-color: black; color: white; font-size: 14px; padding: 2.5px;">New</mark> OMG! I can't wait to see that movie! what theater do you want to go?Anything down near united sq
+				</div><br>
+
+				<div class="contact">
+					<u>Sarah Kelly</u>
+					<p style="color: gray; margin-top: 0px;">151 Messages</p>
+				</div>
+				<div class="Msg">
+					Thanks for your condolences. The family is taking it pretty hard. But, she was 92 -she lived a really great life. This weekend, we're gonna be going through all her old photos
+				</div><br>
+
+				<div class="contact">
+					<u>Luke Jones</u>
+					<p style="color: gray; margin-top: 0px;">135 Messages</p>
+				</div>
+				<div class="Msg">
+					Yeah, I got the package.Next time, you can just leave it at thte dry cleaners in the front of my building-they are pretty cool about that.
+				</div><br>
+			</div>
+
+			<h2>All Conversation</h2><hr>
+
+			<div class="chat">
+				<div class="contact">
+					<u>(212)555-1234</u>
+					<p style="color: gray; margin-top: 0px;">23 Messages</p>
+				</div>
+				<div class="Msg">
+					Ha ha ha ha - that is hialrious!
+				</div><br>
+
+				<div class="contact">
+					<u>(208)555-3212</u>
+					<p style="color: gray; margin-top: 0px;">11 Messages</p>
+				</div>
+				<div class="Msg">
+					<mark style="background-color: black; color: white; font-size: 14px; padding: 2.5px;">New</mark> It was great meeting you last night. How funny is that we've both known Jeff gor 5 years and have never met?!? Hopefully we can get together some time soon.
+				</div><br>
+
+				<div class="contact">
+					<u>Mom</u>
+					<p style="color: gray; margin-top: 0px;">15 Messages</p>
+				</div>
+				<div class="Msg">
+					<mark style="background-color: black; color: white; font-size: 14px; padding: 2.5px;">New</mark> am ever going to see you again? Are you still alive? you should come up to the house this weekend.
+				</div><br>
+
+				<div class="contact">
+					<u>(218)512-1234</u>
+					<p style="color: gray; margin-top: 0px;">7 Messages</p>
+				</div>
+				<div class="Msg">
+					OMG! I can't wait to see that movie! what theater do you want to go?Anything down near united sq
+				</div><br>
+
+				<div class="contact">
+					<u>Katherene Ho</u>
+					<p style="color: gray; margin-top: 0px;">9 Messages</p>
+				</div>
+				<div class="Msg">
+					Hi! How are you dear, You know how much I missed you when you were in london.
+				</div><br>
+
+				<div class="contact">
+					<u>Dad</u>
+					<p style="color: gray; margin-top: 0px;">13 Messages</p>
+				</div>
+				<div class="Msg">
+					<mark style="background-color: black; color: white; font-size: 14px; padding: 2.5px;">New</mark> Hi! I will be late today please don't wait for me.I am with my collegues.
+				</div><br>
+			</div>
+		</div>
+	</section>
+	<div>
+		<div style="display: inline-block;">Textify &copy; 2011</div>
+		<p style="display: inline-block; float: right; margin: 0px;">All text messaging data on this site is kept 100% secure- <a href="">read our security policy</a></p>
+	</div>
+</body>
+</html>
