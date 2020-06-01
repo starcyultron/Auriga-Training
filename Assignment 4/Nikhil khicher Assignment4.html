@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 4</title>
+	<style type="text/css">
+		body{
+			border: 1px;
+			padding: 0px 100px;
+		}
+		.sec{
+			border: 1px black solid;
+			border-top: 3px black solid;	 
+		}
+		.lg{
+			font-weight: bold;
+			font-size: 34px;
+			text-align: center;
+		}
+		.frm{
+			background-color: #e9e9e9;
+			display: block;
+			margin: 0px 100px;
+			float: center;
+			/*text-align: center;*/
+		}
+		.lo{
+			display: inline-block;
+			float: right;
+			padding: 10px;
+		}
+		.head{
+			font-size: 24px;
+			display: inline-block;
+			margin: 10px 10px;
+		}
+		.f16{
+			font-size: 16px;
+			color: black;
+		}
+		.sb{
+			padding: 10px;
+			background-color: #e9e9e9;
+			margin-top: 0px;
+			text-align: center;
+		}
+		.wid{
+			width: 85%;
+			padding: 10px;
+		}
+		a{
+			color: black;
+		}
+		.not{
+			margin: 10px 10px;
+			text-align: center;
+			background-color: gray;
+			padding: 10px;
+		}
+		
+		
+		.pass{
+			display: inline-block;
+			margin: 0px;
+			float: right;
+		}
+		.unread{
+			margin: 40px auto;
+			text-align: center;
+			padding: 20px;
+			background-color: gray;
+			width: 40%;
+		}
+		.card{
+			margin: 10px auto;
+			display: inline-flex;
+			flex-direction: verticle;
+		}
+		.card-content{
+			border: 1px solid black;
+			background-color: #fff;
+			padding: 10px;
+			margin: 10px 40px;
+			text-align: left;
+		}
+		img{
+			width: 150px;
+			height: 130px;
+		}
+		
+		.card-content p{
+			color: gray;
+		}
+		b{
+			color: black;
+			font-size: 20px;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<section class="sec">
+		<div class="head"><b>Textify</b> Because Text Messaging Rocks</div>
+		<span><a href="#" class="lo">logout</a></span>
+		<div class="lg">(212) 555-1234</div>
+		<div class="lg "><a href="#" class="f16" >What is this number?</a></div>
+		<div class="frm">
+			<div>
+			<form action="" method="get" class="">
+				<table>
+				<tr><td><label for="reciepent" class="head lo">To:</label></td>
+				<td><input type="text" name="reciepent"></td>
+					<td><< Phone number or name</td></tr>
+				<tr><td><label for="msg" class="head">Message:</label></td>
+				<td colspan="2"><textarea name="msg" rows="10" cols="80"></textarea></td></tr>
+				<tr><td></td><td><a href="" >Attach a photo to this text</a></td></tr>
+				<tr><td></td><td><input type="submit" class="head" style="background-color: gray;" name="" value="Send Text Message"></td>
+					<td>Or, <a href="" >schedule it for later delivery</a></td></tr>
+				</table>
+			</form></div>
+		</div>
+		<br><br><br>
+			<input type="button" name="recent" value="Recent Conversation">
+			<input type="button" name="recent" value="All Conversation">
+			<input type="button" name="recent" value="Photos">
+
+			<p class="pass"><u>Change Password</u></p>
+		<div class="sb">
+			
+				<div class="card">
+					<div class="card-content">
+						<img src="sara.jpg">
+						<p><b>Sarrah Kelly</b>
+						Sent today</p>
+					</div>
+					<div class="card-content"><img src="dog.jpeg">
+						<p><b>Luke Jones</b>
+						Sent 3hrs ago</p></div>
+					<div class="card-content"><img src="sk.jpg">
+						<p><b>Shraddha Kapoor</b>
+						sent yesterday</p></div>
+					<div class="card-content"><img src="prineeti.jpeg">
+						<p><b>Parineeti Chopra</b>
+						sent on 03/05/2020</p></div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<img src="prineeti.jpeg">
+						<p><b>Sarrah Kelly</b>
+						Sent today</p>
+					</div>
+					<div class="card-content"><img src="dog.jpeg">
+						<p><b>Luke Jones</b>
+						Sent 3hrs ago</p></div>
+					<div class="card-content"><img src="sara.jpg">
+						<p><b>(501)321-1234</b>
+						sent yesterday</p></div>
+					<div class="card-content"><img src="sk.jpg">
+						<p><b>(508)555-1234</b>
+						sent on 03/05/2020</p></div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<img src="sara.jpg">
+						<p><b>Sarrah Kelly</b>
+						Sent today</p>
+					</div>
+					<div class="card-content"><img src="dog.jpeg">
+						<p><b>Luke Jones</b>
+						Sent 3hrs ago</p></div>
+					<div class="card-content"><img src="prineeti.jpeg">
+						<p><b>(501)321-1234</b>
+						sent yesterday</p></div>
+					<div class="card-content"><img src="sk.jpg">
+						<p><b>(508)555-1234</b>
+						sent on 03/05/2020</p></div>
+				</div>
+			
+			<div class="unread"><a href="" style="font-size: 22px; font-weight: bold;">Load More Photos</a><br>
+				<p>There are 93 more photos across 7 conversation</p></div>
+		</div>
+		</div>
+
+	</section>
+	<div>
+		<div style="display: inline-block;">Textify &copy; 2011</div>
+		<p style="display: inline-block; float: right; margin: 0px;">All text messaging data on this site is kept 100% secure- <a href="">read our security policy</a></p>
+	</div>
+</body>
+</html>
